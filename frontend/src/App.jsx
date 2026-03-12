@@ -20,6 +20,7 @@ function App() {
   }, [])
 
   const runAway = () => {
+    e.preventDefault()
     const margin = 100
     const newX = margin + Math.random() * (window.innerWidth - margin * 2)
     const newY = margin + Math.random() * (window.innerHeight - margin * 2)
@@ -49,6 +50,7 @@ function App() {
         className="btn-no"
         ref={noBtnRef}
         onMouseEnter={runAway}
+        onTouchStart={runAway}
         style={{ left: noPos.x, top: noPos.y }}
       >
         No
