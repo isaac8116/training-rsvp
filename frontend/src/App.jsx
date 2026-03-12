@@ -19,7 +19,7 @@ function App() {
     setNoPos({ x: startX + yesRect.width + gap, y: startY })
   }, [])
 
-  const runAway = () => {
+  const runAway = (e) => {
     e.preventDefault()
     const margin = 100
     const newX = margin + Math.random() * (window.innerWidth - margin * 2)
