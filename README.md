@@ -24,13 +24,17 @@ https://training-please-come.netlify.app/
 ### With Docker
 ```bash
 docker compose up --build
+```
 
 ### Without Docker
+```
 cd frontend
 npm install
 npm run dev
+```
 
 ## Project Structure
+```
 training-rsvp/
 ├── frontend/
 │   ├── src/
@@ -42,3 +46,4 @@ training-rsvp/
 │   ├── vite.config.js
 │   └── Dockerfile
 └── docker-compose.yml
+```
